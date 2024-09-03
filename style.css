@@ -1,0 +1,185 @@
+/* header styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffcecf;
+}
+/* header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%; /* Brug 100% i stedet for auto for at sikre, at headeren fylder hele bredden */
+  font-weight: bold;
+  position: relative;
+  font-size: 18px;
+  list-style: none;
+  color: #f10606;
+  padding: 1rem;
+  background-color: #ffcecf; /* Baggrundsfarven skal være på headeren, ikke på * */
+}
+
+/* Korrekt style linkene inden i headeren */
+header a {
+  text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  color: #f10606; /* Sørg for at linkfarven stemmer overens */
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Krona One", sans-serif;
+  color: #f10606;
+}
+
+/* font-style */
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Krona One", sans-serif;
+  font-size: 239px;
+  margin: 7px;
+  color: #f10606;
+}
+
+h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 60px;
+  margin: 7px;
+  color: #f10606;
+}
+
+.produkt_container {
+  width: 100%; /* Juster efter behov */
+  max-width: 1200px; /* Valgfrit: for at begrænse den maksimale bredde */
+  margin: 0 auto; /* Centrerer containeren horisontalt */
+}
+
+/* Produktliste med grid layout */
+.produkt_liste {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 25px 10px; /* Justeret margin */
+}
+
+/* Billederne skal være inden for kolonnebredde */
+.produkt_liste img {
+  height: 299px;
+  max-width: 100%; /* Sikrer at billederne ikke overskrider kolonnerne */
+}
+
+/* Styling for produktkort */
+.produkt {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box; /* Sikrer korrekt bredde */
+}
+
+/* Styling for statusmærker */
+.status-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  font-family: "Krona One", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sale-badge {
+  background-color: #e74c3c; /* Rød for Sale */
+}
+
+.sold-out-badge {
+  background-color: #95a5a6; /* Grå for Sold Out */
+}
+
+/* Styling for overskrifter og tekster */
+h3 {
+  font-family: "Krona One", sans-serif;
+  font-size: 20px;
+  margin: 7px;
+  color: #f10606;
+}
+
+p {
+  font-family: "Krona One", sans-serif;
+  font-size: 16px;
+  margin: 7px;
+  color: #000000;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount-price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  color: #3498db;
+  margin-left: 7px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Kategori side */
+.kategori_liste {
+  padding: 15px 30px; /* Padding for size and clickability */
+  font-size: 16px; /* Font size for readability */
+  font-weight: bold; /* Bold text to stand out */
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.container_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-left: 248px;
+  margin-block: 64px;
+}
+
+.a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Krona One", sans-serif;
+  color: #ffcecf;
+  text-align: center;
+}
+
+.soldOut {
+  opacity: 0.5;
+}
+
+.soldOut .soldOutSticker {
+  display: inline;
+}
+
+.soldOutSticker {
+  background-color: #f10606;
+  padding: 0.5rem;
+  color: wheat;
+  display: none;
+}
+
+.discounted {
+  background-color: #3498db;
+  padding: 1rem;
+  color: antiquewhite;
+}

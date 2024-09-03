@@ -1,0 +1,31 @@
+/* Styling for kategori CTA-button */
+.cta-button {
+  background-color: #f10606; /* Baggrundsfarve */
+  color: #ffcecf; /* Tekstfarve */
+  padding: 50px 50px; /* Indre margin omkring teksten */
+  border-radius: 80px; /* Rundede hjørner */
+  text-align: center;
+  display: inline-block; /* Gør det til en inline-block for at kunne justere størrelse og margin */
+  margin: 10px 0; /* Plads over og under CTA-knappen */
+  cursor: pointer; /* Skifter musemarkøren til en hånd når der hoveres over knappen */
+  font-weight: bold; /* Gør teksten fed */
+  font-size: 16px; /* Tekststørrelse */
+  text-decoration: none; /* Fjerner understregning */
+  transition: background-color 0.3s ease; /* Glidende overgangseffekt når baggrundsfarven ændres */
+}
+
+.cta-button:hover {
+  background-color: #d10505; /* Mørkere farve ved hover */
+  color: #ffffff; /* Tekstfarve ved hover */
+}
+
+/* Styling for container and category list */
+.container_1 {
+  display: flex;
+  flex-direction: row; /* Arrangerer kategorierne lodret */
+  align-items: center; /* Centrerer kategorierne horisontalt */
+}
+
+.kategori_liste {
+  margin: 10px 0; /* Plads over og under hver kategori */
+}
