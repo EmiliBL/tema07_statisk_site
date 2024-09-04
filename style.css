@@ -63,16 +63,15 @@ h2 {
 }
 
 /* Produktliste med grid layout */
-.produkt_liste {
+.smallProductColumn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 25px 10px; /* Justeret margin */
+  gap: 1em;
 }
 
 /* Billederne skal være inden for kolonnebredde */
-.produkt_liste img {
-  height: 299px;
+.smallProduct img {
+  height: auto;
   max-width: 100%; /* Sikrer at billederne ikke overskrider kolonnerne */
 }
 
@@ -109,6 +108,7 @@ h3 {
   font-size: 20px;
   margin: 7px;
   color: #f10606;
+  overflow-wrap: break-word;
 }
 
 p {
@@ -182,4 +182,5 @@ a:hover {
   background-color: #3498db;
   padding: 1rem;
   color: antiquewhite;
+  width: 20rem;
 }

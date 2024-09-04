@@ -31,28 +31,35 @@
 
     <main>
         <h2>T-Shirts</h2>
-        <template id="smallProductTemplate">
-            <article class="smallProduct">
-                <!-- det her er børnene -->
-                <a href="produkt.html">
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="T-Shirts">
-                </a>
-                <h3> White Tee Organic Cotton</h3>
-                <p class="subtle"> T-shirt | FASHION</p>
-                <p class="price"><span>DKK.</span> </p>
-                <div class="discounted">
-                    <p> Now DKK 360 </p>
-                    <p>-20%</p>
-                </div>
-                <p class="soldOutSticker hide">Sold Out</p>
-                <a class="readMore" href="produkt.html"> Read more </a>
-            </article>
-        </template>
+        <div class="smallProductColumn">
+            <template id="smallProductTemplate">
+                <article class="smallProduct">
+                    <!-- det her er børnene -->
+                    <a href="produkt.html">
+                        <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="T-Shirts">
+                    </a>
+                    <h3> White Tee Organic Cotton</h3>
+                    <p class="subtle"> T-shirt | FASHION</p>
+                    <p class="price"><span>DKK.</span> </p>
+                    <div class="discounted">
+                        <p> Now DKK <span></span>,- </p>
+                        <p> <span></span> %</p>
+                    </div>
+                    <p class="soldOutSticker hide">Sold Out</p>
+                    <a class="readMore" href="produkt.html"> Read more </a>
+                </article>
+            </template>
+        </div>
+    </main>
 
+    <script src="produktliste.js"> </script>
 
+</body>
 
-        <!-- Produkt på Sale -->
-        <!--     <article class="produkt produkt-sale">
+</html>
+
+<!-- Produkt på Sale -->
+<!--     <article class="produkt produkt-sale">
                 <a href="produkt.html"><img src="tshirt.webp" alt="T-Shirts"></a>
                 <div class="status-badge sale-badge">Sale</div>
                 <h3>White Tee Organic Cotton</h3>
@@ -77,11 +84,4 @@
                 <p>DKK 450</p>
                 <a href="produkt.html">Read more</a>
             </article>  -->
-        <!--  </div> -->
-    </main>
-
-    <script src="produktliste.js"> </script>
-
-</body>
-
-</html>
+<!--  </div> -->

@@ -1,6 +1,6 @@
 /* Se Jonas` video fra uge 35 = MEGA GOD */
 
-/* linket er et end point */
+/* linket er et end-point */
 /* Hvis man vil se ex 100 produkter tilføj fetch("https://kea-alt-del.dk/t7/api/products?limit=100") */
 fetch("https://kea-alt-del.dk/t7/api/products")
   .then((res) => res.json())
@@ -40,8 +40,19 @@ function showProduct(product) {
     /* product er soldout */
     copy.querySelector("article").classList.add("soldOut");
   }
+  /* Product er på tilbu, MIT FORSVINDER NÅR DETTE INDSÆTTES */
+  /*  if (produkt.discount) {
+    kopi.querySelector("article").classList.add("onSale");
+    kopi.querySelector(".discounted p span").textContent = Math.round(produkt.price - (produkt.price * produkt.discount) / 100);
+    kopi.querySelector(".discounted p+p span").textContent = produkt.discount;
+  } */
 
-  /*  VORES DOM {
+  copy.querySelector("a").href = `produkt.html?id=${product.id}`;
+  /* Appende (Tilføje noget til en eksisterende array) hvor den skal være i DOM (html´en) */
+  document.querySelector("main").appendChild(copy);
+}
+
+/*  VORES DOM {
     "id": 1163,
     "gender": "Men",
     "category": "Apparel",
@@ -56,9 +67,3 @@ function showProduct(product) {
     "brandname": "Nike",
     "soldout": 0
   }, */
-
-  /* HJÆLP MED DENNE LINJE, DER GØR AT VI IKKE KAN SE TINGENE */
-  copy.querySelector("a").href = `produkt.html?id=${product.id}`;
-  /* Appende (Tilføje noget til en eksisterende array) hvor den skal være i DOM (html´en) */
-  document.querySelector("main").appendChild(copy);
-}
